@@ -7,7 +7,7 @@ public class VendingMachine {
         this.list = list;
     }
 
-    public Product getProductByName (String name) {
+    public Product getProductByName(String name) {
         for (Product item: this.list) {
             if (name.equals(item.getName())) {
                 return item;

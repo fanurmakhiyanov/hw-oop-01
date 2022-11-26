@@ -26,5 +26,16 @@ public class Main {
         String keyBottle = "Sprite";
         System.out.println(bottleMachine.getProductByName(keyBottle));
 
+        List<Product> listHeadphones = new ArrayList<Product>(
+                Arrays.asList(
+                        new Headphones("AirPods", 1500.0, "Wireless", "Active Noise-Cancelling"),
+                        new Headphones("Sennheiser", 1100.0, "Wire", "Bone Conduction")
+                )
+        );
+
+        VendingMachine headphonesVendingMachine = new HeadphonesVendingMachine(listHeadphones);
+        String keyAccessories = "AirPods";
+        System.out.println(headphonesVendingMachine.getProductByName(keyAccessories));
+
     }
 }
